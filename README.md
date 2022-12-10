@@ -1,7 +1,7 @@
 # Imdb
 
-/* when the app is open click on button link that say MOVIES or SHOWS for their list */
-/* search works with search [button]... i didn't know how to set it up to search automaticly when typing.. or just pres enter */
+When the app is open click on button link that say MOVIES or SHOWS for their list,
+Search works with search [button]... i didn't know how to set it up to search automaticly when typing.. or just pres enter
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
 
