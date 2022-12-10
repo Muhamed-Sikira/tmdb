@@ -1,6 +1,6 @@
 # Imdb
 
-/* when the app is open click on button link that say MOVIES or SHOWS for their list*/
+/* when the app is open click on button link that say MOVIES or SHOWS for their list */
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
 
