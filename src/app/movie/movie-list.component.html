@@ -1,0 +1,41 @@
+<div class="main-wrapper">
+  <form
+    class="filter-wrapper"
+    [formGroup]="searchForm"
+    (ngSubmit)="submitForm()"
+  >
+    <div class="filter-main">
+      <input class="filter-input" formControlName="movieName" type="text" />
+    </div>
+    <div class="filter-button">
+      <button class="filter-primary">Search</button>
+    </div>
+  </form>
+  <div class="movie-wrapper">
+    <tbody>
+      <tr
+        *ngFor="
+          let b of bannerResult;
+          let i = index;
+          let s of searchResult;
+          let t of trendingMovieResult
+        "
+        [ngClass]="{ active: i === 1 }"
+      >
+        <div class="movie-img">
+          <td [routerLink]="['/movie', t.id]">
+            <img
+              class="movie-image"
+              src="https://image.tmdb.org/t/p/original{{ b.poster_path }}"
+            />
+          </td>
+        </div>
+        <div class="movie-description">
+          <td>
+            <div class="movie-name">{{ b.original_title }}</div>
+          </td>
+        </div>
+      </tr>
+    </tbody>
+  </div>
+</div>

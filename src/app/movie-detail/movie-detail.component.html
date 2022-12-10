@@ -1,0 +1,27 @@
+<div class="detail-wrapper">
+  <div class="detail-back">
+    <button class="detail-button"
+            [routerLink]="['/movie']"
+            >
+        Back
+    </button>
+  </div>
+  <div class="movie-info">
+    <div class="movie-img">
+      <img
+        src="https://image.tmdb.org/t/p/original{{ getMovieDetailResult.backdrop_path}}"
+        alt=""
+        class="movie-image"
+      />
+    </div>
+    <div class="movie-description">
+        <div class="movie-title">
+            <h3>{{getMovieDetailResult.original_title}}</h3>
+        </div>
+        <div class="movie-paragraph">
+            <p class="movie-overview">Movie Overview</p>
+            <p class="movie-Mainoverview">{{getMovieDetailResult.overview}}</p>
+        </div>
+    </div>
+  </div>
+</div>

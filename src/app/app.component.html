@@ -1,0 +1,13 @@
+<div class="wrapper">
+  <div class="buttons-links">
+    <a [routerLink]="['/movie']" >
+      <button class="buttons-link" routerLink="/movies">Movies</button>
+    </a>
+    <a [routerLink]="['/shows']">
+      <button class="buttons-link" routerLink="/shows">TV Shows</button>
+    </a>
+  </div>
+</div>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

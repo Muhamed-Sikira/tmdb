@@ -1,0 +1,56 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    font-family: sans-serif;
+    color: #fff;
+    background: rgb(27, 40, 56);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    width: 1024px;
+    margin: auto;
+}
+a {
+    text-decoration: none;
+
+    &:hover {
+        color: #fff;
+    }
+}
+
+.buttons {
+    &-links {
+        width: 100%;
+        margin: 25px 0;
+        display: flex;
+        gap: 5px;
+    }
+
+    &-link {
+        text-decoration: none;
+        border: 1px solid #323a45;
+        outline: none;
+        color: #fff;
+        background: #323a45;
+        padding: 7px 30px;
+        font-weight: 700;
+        transition-duration: 0.3s;
+        cursor: pointer;
+
+        &:hover {
+            color: #323a45;
+            background: #fff;
+            border: 1px solid #323a45;
+            box-shadow: 4px 3px 8px 0px black;
+            transform: translatey(-3px);
+        }
+    }
+}
+.container{
+    width: 1024px;
+    margin: auto;
+}

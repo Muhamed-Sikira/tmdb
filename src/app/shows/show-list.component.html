@@ -1,0 +1,40 @@
+
+<div class="main-wrapper">
+  <form
+    class="filter-wrapper"
+    [formGroup]="searchForm"
+    (ngSubmit)="submitForm()"
+  >
+    <div class="filter-main">
+      <input class="filter-input" type="text" />
+    </div>
+    <div class="filter-button">
+      <button class="filter-primary">Search</button>
+    </div>
+  </form>
+  <div class="show-wrapper">
+    <tbody>
+      <tr *ngFor="
+            let i = index; 
+            let b of bannerResult;
+            let s of searchResult;
+            let t of trendingShowResult
+        " 
+        [ngClass]="{ active: i === 1 }">
+        <div class="show-img">
+          <td [routerLink]="['/shows', t.id]">
+            <img
+              class="show-image"
+              src="https://image.tmdb.org/t/p/original{{ b.poster_path }}"
+            />
+          </td>
+        </div>
+        <div class="show-description">
+          <td>
+            <div class="show-name">{{ b.original_name }}</div>
+          </td>
+        </div>
+      </tr>
+    </tbody>
+  </div>
+</div>
